@@ -1,0 +1,77 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<title>CarRenting</title>
+
+<link href="jquery-ui/jquery-ui.min.css" rel="stylesheet"/>
+<link href="css/tabla.css" rel="stylesheet"/>
+
+<style>
+	.ui-menu { width: 250px; }
+
+	.error{
+	outline:thin solid yellow;
+	outline:5px auto -webkit-focus-ring-color;
+	outline-offset:-2px;
+	background-color: yellow;
+
+	#formularios{
+		display:none;
+	}
+	#capaTabla {
+		position: relative;
+		width: 500px;
+		left: 15%;
+		top: 100px;
+	}
+
+	#capaTabla table{
+		width: 100%;
+		float: left;
+		
+	}
+
+
+}
+</style>
+</head>
+
+<body>
+
+	
+	<div>
+		<ul id="menu">
+            <li id="mnuAltaCliente">Alta cliente</li>		
+			<li id="mnuModificarCliente">Modificar cliente</li>
+			<li id="mnuAltaVehiculo">Alta vehículo</li>
+			<li id="mnuModificarVehiculo">Modificar vehículo</li>
+			<li id="mnuAltaAlquiler">Alta alquiler</li>
+			<li id="mnuListado">Listados</li>
+
+
+
+		</ul>	
+	</div>
+
+	<div id="formularios"></div>
+
+	<div id="capaMensajes"><p id="mensaje"></p></div>
+	<h1 id="titulo" hidden>Listados</h1>
+	<div class="table-responsive"  id="capaTabla">
+	    <table class="table table-hover" id="listado">
+		</table>
+	</div>
+
+	<script type="text/javascript" src="jquery/jquery-2.2.0.min.js"></script>
+	<script type="text/javascript" src="jquery-ui/jquery-ui.js"></script>
+	<script type="text/javascript" src="js/objetos.js"></script>
+	<script type="text/javascript" src="js/altaVehiculo.js"></script>
+	<script type="text/javascript" src="js/modVehiculo.js"></script>
+	<script type="text/javascript" src="js/listados.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
+	<script type="text/javascript" src="js/ajax.js"></script>
+</body>
+
+</html>

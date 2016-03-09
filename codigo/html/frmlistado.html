@@ -1,0 +1,28 @@
+
+	<form id="frmListado" name="frmListado">
+<fieldset id="fTipoListado">
+	<legend>Listado</legend>
+	<input type="radio" id="rCliente" name="rtipo" value="c" checked/>Clientes<br>
+    <input type="radio" id="rVehiculo" name="rtipo" value="v"/>Vehiculos<br>
+    <input type="radio" id="rAlquiler" name="rtipo" value="a"/>Alquiler
+</fieldset>
+<fieldset id="fTipoOrden" >
+	<legend>Orden</legend>
+	<input type="radio" id="rASC" name="rOrden" value="ASC" checked/>Ascendente<br>
+    <input type="radio" id="rDESC" name="rOrden" value="DESC"/>Descendente
+</fieldset>
+<fieldset id="fFiltradoV" hidden>
+	<legend>Filtrado</legend>
+	<input type="radio" id="rTodos" name="rFiltradoV" value="todos" checked/>Todos<br>
+	<input type="radio" id="rVA" name="rFiltradoV" value="vA"/>Vehiculos Alquilado<br>
+	<input type="radio" id="rVNA" name="rFiltradoV" value="vNA"/>Vehiculos no Alquilado<br>
+    <input type="checkbox" id="cTipo" name="cTipo" value="t"/>Tipo
+	<select id="sTipoV" name="sTipoV" disabled >
+                <option value="A">Clase A</option>
+                <option value="B">Clase B</option>
+                <option value="C">Clase C</option>
+                <option value="D">Clase D</option>
+	</select>
+	<br>
+</fieldset>
+</form>
